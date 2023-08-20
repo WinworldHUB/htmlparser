@@ -1,6 +1,13 @@
 const express = require("express");
 const fetch = require("node-fetch");
+const cors = require("cors");
+
 const app = express();
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 const port = 8080;
 
 app.get("/", (req, res) => {
