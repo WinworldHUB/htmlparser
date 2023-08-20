@@ -33,5 +33,5 @@ app.get("/image", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`HTMLParser listening on port ${port}`);
+  console.log(`HTMLParser listening on secured port ${port}`);
 });
